@@ -12,7 +12,18 @@ These files are organised by block level
 		}
 	}
 
-Quick links:
+# Usage
+
+Simply checkout the latest copy using git
+
+	sudo git clone https://github.com/Xeoncross/nginx_configs /etc/nginx/nginx_configs
+
+Then include the files you need from inside your `/etc/nginx/sites-available/[file]` configs
+
+	include /etc/nginx/nginx_configs/gzip.conf
+
+
+## Quick links:
 
 - http://wiki.nginx.org/HttpCoreModule
 - http://wiki.nginx.org/HttpCoreModule#Variables
