@@ -22,6 +22,18 @@ Then include the files you need from inside your `/etc/nginx/sites-available/[fi
 
 	include /etc/nginx/nginx_configs/gzip.conf
 
+	server {
+		listen 8000;
+		server_name example.com *.example.com;
+		root /var/www/example.com/public;
+
+		include /etc/nginx/nginx_configs/server/base.conf
+		include /etc/nginx/nginx_configs/server/cache.conf
+		include /etc/nginx/nginx_configs/server/log.conf
+		include /etc/nginx/nginx_configs/server/php.conf
+
+		...
+	}
 
 ## Quick links:
 
