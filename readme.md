@@ -1,42 +1,12 @@
 # Nginx Sample Configs
 
-These are sample configs that can be included from within nginx configs or used as a reference for common tasks.
+These are sample configs I've used for different server setups.
 
-These files are organised by block level
-
-	http {
-		server {
-			location {
-				# ...
-			}
-		}
-	}
-
-# Usage
-
-Simply checkout the latest copy using git
-
-	sudo git clone https://github.com/Xeoncross/nginx_configs /etc/nginx/nginx_configs
-
-Then include the files you need from inside your `/etc/nginx/sites-available/[file]` configs
-
-	include /etc/nginx/nginx_configs/gzip.conf
-
-	server {
-		listen 8000;
-		server_name example.com *.example.com;
-		root /var/www/example.com/public;
-
-		include /etc/nginx/nginx_configs/server/base.conf
-		include /etc/nginx/nginx_configs/server/cache.conf
-		include /etc/nginx/nginx_configs/server/log.conf
-		include /etc/nginx/nginx_configs/server/php.conf
-
-		...
-	}
+If you need a default config I recomend starting with the [Nginx HTTP server boilerplate configs](https://github.com/h5bp/server-configs-nginx) project. 
 
 ## Quick links:
 
+- https://github.com/h5bp/server-configs-nginx
 - http://wiki.nginx.org/HttpCoreModule
 - http://wiki.nginx.org/HttpCoreModule#Variables
 - https://github.com/Xeoncross/simpleserversetup
