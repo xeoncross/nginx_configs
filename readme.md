@@ -6,6 +6,7 @@ If you need a default config I recomend starting with the [Nginx HTTP server boi
 
 ## Quick links:
 
+- [fastcgi_params vs fastcgi.conf](http://blog.martinfjordvald.com/2013/04/nginx-config-history-fastcgi_params-versus-fastcgi-conf/)
 - https://github.com/h5bp/server-configs-nginx
 - http://wiki.nginx.org/HttpCoreModule
 - http://wiki.nginx.org/HttpCoreModule#Variables
